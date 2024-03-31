@@ -244,6 +244,40 @@ class Movements:
         return self.cube.ravel()
 
 
+class RubikSolver(RubikCube, Movements):
+    def __init__(self, cube):
+        self.cube = cube
+
+    def random_suffle(self):
+        """Esta función debe permitir revolver el cubo con una serie de movimientos al azar"""
+        pass
+
+    def lista_suffle(self):
+        """Esta función debe revolver el cubo según el array que le sesa dado"""
+        pass
+
+    def Best_First_Search(self, goal, heuristic):
+        """Esta función debe de resolver el cubo de rubik ccon el allgoritmo de Best First Search"""
+        self.goal = goal
+        self.heuristic = heuristic
+
+    def Breadth_First_Search(self, goal, heuristic):
+        """Esta función debe de resolver el cubo de rubik con el algoritmo de Breadth First Search"""
+        self.goal = goal
+        self.heuristic = heuristic
+
+    def A_Star(self, goal, heuristic):
+        """Esta función debe resolver el cubo de rubik con el algorito de A Estrella"""
+        self.goal = goal
+        self.heuristic = heuristic
+
+    def Surprise(self, goal, heuristic):
+        """Esta función debe resolver el cubo de rubik con un algorimo de nuestra autoría ( No tengo ni idea de que vamos a hacer en esta parte)"""
+        self.goal = goal
+        self.heuristic = heuristic
+        # Se me ocurre que podemos poner dijkstra
+
+
 """Bienvenido a la sección de Testeo del código """
 # help(RubikCube)
 # help(Movements)
@@ -390,4 +424,4 @@ print(ravel)
 # movimientos.b_prima()
 # ravel = movimientos.ravel()
 # print(ravel)
-"""Según Los casos pruebas hay un error en L"""
+"""Según Los casos pruebas hay un error en L y/o L' """
