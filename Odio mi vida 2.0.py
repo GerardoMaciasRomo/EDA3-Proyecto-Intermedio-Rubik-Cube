@@ -37,7 +37,7 @@ class Movements:
     movimientos principales  del puzzle de Rubik 3x3, me en cuentro aún revisando
     el correcto funcionamiento de cada una de las implementaciones"""
 
-    def _init_(self, cube):
+    def __init__(self, cube):
         """El único parámetro necesario para esta clase es un cubo que debe ser dado"""
         self.cube = cube
 
@@ -252,7 +252,7 @@ class Movements:
 
 
 class RubikSolver:
-    def _init_(self, cube):
+    def __init__(self, cube):
         self.cube = cube
 
     def random_suffle(self, num_moves):
@@ -583,6 +583,9 @@ print(ravel)
 """Test Case 6"""
 # movimientos.b()
 # movimientos.b_prima()
+# ravel = movimientos.ravel()
+# print(ravel)
+"""Según Los casos pruebas hay un error en L y/o L' """
 # ravel = movimientos.ravel()
 # print(ravel)
 """Según Los casos pruebas hay un error en L y/o L' """
